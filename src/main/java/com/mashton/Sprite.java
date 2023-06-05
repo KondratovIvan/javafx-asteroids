@@ -10,7 +10,8 @@ public class Sprite {
     public Rectangle boundary;
     public Image image;
     public double elapseTimeSeconds;
-
+    public double width;
+    public double height;
 
     public Sprite() {
         position = new Vector();
@@ -18,6 +19,8 @@ public class Sprite {
         rotationInDegrees = 0;
         boundary = new Rectangle();
         elapseTimeSeconds = 0;
+        width = 0;
+        height = 0;
     }
 
     public Sprite(String imageFileName) {
@@ -80,4 +83,13 @@ public class Sprite {
         context.restore();
     }
 
+
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
 }
